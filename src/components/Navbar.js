@@ -1,14 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
-      {/* TODO: Replace <a> with Link */}
-      
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-      
+    <nav style={{ padding: "10px", background: "#eee" }}>
+      {/* Replacing static elements with React router Link components */}
+      <Link to="/" style={{ margin: "0 10px" }}>
+        Home
+      </Link>
+      <Link to="/about" style={{ margin: "0 10px" }}>
+        About
+      </Link>
+      <Link to="/contact" style={{ margin: "0 10px" }}>
+        Contact
+      </Link>
     </nav>
   );
 }
